@@ -137,7 +137,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" class="sem_image_1" src="assets/img/seminar/seminar1.png" alt="..." />
+                                <img class="img-fluid" id="sem_image_1" src="assets/img/seminar/seminar1.png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading"><div class="sem_author_1"></div></div>
@@ -154,7 +154,7 @@
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" class="sem_image_2" src="assets/img/seminar/seminar2.png" alt="..." />
+                                    <img class="img-fluid" id="sem_image_2" src="assets/img/seminar/seminar2_small.png" alt="..." />
                                 </a>
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading"><div class="sem_author_2"></div></div>
@@ -452,9 +452,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h3 class="text-uppercase"><div class="sem_title_1"></div></h3>
-                                    <p class="item-intro text-muted"><div class="sem_author_1"></div></p>
-                                    <img class="img-fluid d-block mx-auto" class="sem_image_1" src="assets/img/seminar/seminar1.png" alt="..." />
-                                    <div class="sem_abstract_1"></div></br>
+                                    <strong><div class="sem_author_1"></div></strong></br>
+                                    <!-- <img class="img-fluid d-block mx-auto" id="sem_image_1" src="" alt="..." /> -->
+                                    <div style="padding-top: 20pt; padding-bottom: 20pt;"><div class="sem_abstract_1"></div></div></br>
                                     <ul class="list-inline text-left">
                                         <li>
                                             <strong>Date/Time:</strong>
@@ -487,9 +487,9 @@
                                 <div class="modal-body">
                                     <!-- Project details-->
                                     <h3 class="text-uppercase"><div class="sem_title_2"></div></h3>
-                                    <p class="item-intro text-muted"><div class="sem_author_2"></div></p>
-                                    <img class="img-fluid d-block mx-auto" class="sem_image_2" src="assets/img/seminar/seminar2.png" alt="..." />
-                                    <div class="sem_abstract_2"></div></br>
+                                    <strong><div class="sem_author_2"></div></strong></br>
+                                    <!-- <img class="img-fluid d-block mx-auto" id="sem_image_1" src="" alt="..." /> -->
+                                    <div style="padding-top: 20pt; padding-bottom: 20pt;"><div class="sem_abstract_2"></div></div></br>
                                     <ul class="list-inline text-left">
                                         <li>
                                             <strong>Date/Time:</strong>
@@ -550,16 +550,16 @@
 
         <script>
             //Talk 1
-            $("div.sem_title_1").replaceWith("TBC: Learned Image Reconstruction for Interferometric Imaging");
-            $("div.sem_author_1").replaceWith("TBC: Matthijs Mars");
-            $("div.sem_abstract_1").replaceWith("Abstract:  Coming Soon!");
+            $("div.sem_title_1").replaceWith("Learned Image Reconstruction for Interferometric Imaging");
+            $("div.sem_author_1").replaceWith("Matthijs Mars");
+            $("div.sem_abstract_1").replaceWith("The advent of the next generation of interferometric telescopes, exemplified by the Square Kilometre Array (SKA), presents novel challenges in managing the vast quantities of data they will acquire. To address this, we propose machine learning methods that balance computational efficiency with state-of-the-art image reconstruction quality. Current image reconstruction techniques in radio interferometry primarily rely on variations of the CLEAN algorithm, which are computationally efficient but tend to fall short in reconstructing extended sources. In contrast, the latest approaches employ proximal optimization techniques, which offer superior reconstruction quality but are computationally expensive and rely on manual priors. This talk delves into our research on leveraging machine learning for image reconstruction in radio interferometry. We focus on learned image reconstruction techniques and discuss the specific challenges that arise within the context of radio interferometry. Our findings demonstrate that applying machine learning to interferometric reconstruction not only enhances reconstruction quality but also substantially reduces computation time.");
             $("div.sem_where_1").replaceWith("online");
 
             $("div.sem_day_1").replaceWith("28");
             $("div.sem_month_1").replaceWith("Sept");
             $("div.sem_time_1").replaceWith("1pm");
 
-            $(".sem_image_1").attr('src',"assets/img/seminar/seminar1.png");
+            $("#sem_image_1").attr('src',"assets/img/seminar/SKA.png");
 
             // Talk 2
             $("div.sem_title_2").replaceWith("TBC: Symplectic NN for gravitational-wave modelling");
@@ -571,13 +571,13 @@
             $("div.sem_month_2").replaceWith("Sept");
             $("div.sem_time_2").replaceWith("1:30pm");
 
-            $(".sem_image_2").attr('src',"assets/img/seminar/seminar2.png");
+            $(".sem_image_2").attr('src',"assets/img/seminar/seminar2_small.png");
 
             // Talk 3
-            $("div.sem_title_3").replaceWith("TBC: Simulation-based inference: the Dark Energy Survey & Evidence Networks");
-            $("div.sem_author_3").replaceWith("TBC: Niall Jeffrey");
+            $("div.sem_title_3").replaceWith("Simulation-based inference: the Dark Energy Survey & Evidence Networks");
+            $("div.sem_author_3").replaceWith("Niall Jeffrey");
             $("div.sem_abstract_3").replaceWith("Coming Soon");
-            $("div.sem_where_3").replaceWith("hybrid");
+            $("div.sem_where_3").replaceWith("hybrid/online");
 
             $("div.sem_day_3").replaceWith("26");
             $("div.sem_month_3").replaceWith("Oct");
