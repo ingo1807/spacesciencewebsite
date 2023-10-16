@@ -132,7 +132,7 @@
                     If you wish to give a talk, please fill in <a href="https://docs.google.com/forms/d/1x23NFGouNud1YV_piemyU1wXTpP7LP8WDTNH7LZwtQE/edit">this form</a>. Thanks!</h3>
 
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <!-- Seminar  1 -->
                     <div class="col col-sm-6 mb-4">
                     <!-- <div class="col"> -->
@@ -151,9 +151,9 @@
                     </div>
                     
                     <!-- Seminar  2 -->
-                    <div class="col col-sm-6 mb-4">
+                    <!-- <div class="col col-sm-6 mb-4"> -->
                     <!-- <div class="col"> -->
-                            <div class="portfolio-item">
+                            <!-- <div class="portfolio-item">
                                 <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-3x"></i></div>
@@ -164,8 +164,8 @@
                                     <div class="portfolio-caption-heading"><div class="sem_author_2"></div></div>
                                     <div class="portfolio-caption-subheading text-muted"><div class="sem_title_2"></div></div>
                                 </div>
-                            </div>
-                    </div>
+                            </div> -->
+                    <!-- </div> -->
 
                     <!-- Seminar  3 -->
                     <!-- <div class="col-lg-4 col-sm-6 mb-4">
@@ -554,58 +554,58 @@
 
         <script>
             //Talk 1
-            $("div.sem_title_1").replaceWith("Artificial Intelligence in Astronomy");
-            $("div.sem_author_1").replaceWith("Jason McEwen");
-            $("div.sem_abstract_1").replaceWith("To kick things off, this talk will provide a brief overview of AI and machine learning in Astronomy and Astrophysics.");
+            $("div.sem_title_1").replaceWith("Simulation-based inference: the Dark Energy Survey & Evidence Networks");
+            $("div.sem_author_1").replaceWith("Niall Jeffrey");
+            $("div.sem_abstract_1").replaceWith("I will present our state-of-the-art likelihood-free (simulation-based) 𝑤CDM inference using Dark Energy Survey Year 3 weak-lensing maps. Deep learning methods are used in two distinct ways in this analysis: (i) the compression of power spectra, peak counts, and direct map-level inference (using convolutional neural networks), and (ii) neural likelihood estimation and validation. Simulation-based inference allows for more realistic astrophysical modelling and improved cosmological constraints. This talk will highlight the public release of the Gower Street (DiRAC) simulation suite – full-sky cosmological simulations that vary 7 cosmological parameters with a mixed active learning strategy. I will also discuss lessons learned from these analyses and future developments for simulation-based inference in astrophysics, with a focus on ESA's Euclid mission, including Evidence Network for exact Bayesian model comparison with machine learning.");
             $("div.sem_where_1").replaceWith("online");
 
-            $("div.sem_day_1").replaceWith("28");
-            $("div.sem_month_1").replaceWith("Sept");
+            $("div.sem_day_1").replaceWith("26");
+            $("div.sem_month_1").replaceWith("Oct");
             $("div.sem_time_1").replaceWith("1pm");
 
-            $("#sem_image_1").attr('src',"assets/img/seminar/seminar1_small.png");
+            $("#sem_image_1").attr('src',"assets/img/seminar/GowerSt_map.png");
 
             // Talk 2
-            $("div.sem_title_2").replaceWith("Learned Image Reconstruction for Interferometric Imaging");
-            $("div.sem_author_2").replaceWith("Matthijs Mars");
-            $("div.sem_abstract_2").replaceWith("The advent of the next generation of interferometric telescopes, exemplified by the Square Kilometre Array (SKA), presents novel challenges in managing the vast quantities of data they will acquire. To address this, we propose machine learning methods that balance computational efficiency with state-of-the-art image reconstruction quality. Current image reconstruction techniques in radio interferometry primarily rely on variations of the CLEAN algorithm, which are computationally efficient but tend to fall short in reconstructing extended sources. In contrast, the latest approaches employ proximal optimization techniques, which offer superior reconstruction quality but are computationally expensive and rely on manual priors. This talk delves into our research on leveraging machine learning for image reconstruction in radio interferometry. We focus on learned image reconstruction techniques and discuss the specific challenges that arise within the context of radio interferometry. Our findings demonstrate that applying machine learning to interferometric reconstruction not only enhances reconstruction quality but also substantially reduces computation time.");
+            $("div.sem_title_2").replaceWith("Exploiting Gaia data and understanding the galaxies' past histories with machine learning");
+            $("div.sem_author_2").replaceWith("TBC: Tanya Kushwahaa");
+            $("div.sem_abstract_2").replaceWith("Coming Soon");
             $("div.sem_where_2").replaceWith("online");
 
-            $("div.sem_day_2").replaceWith("28");
-            $("div.sem_month_2").replaceWith("Sept");
-            $("div.sem_time_2").replaceWith("1:30pm");
+            $("div.sem_day_2").replaceWith("30");
+            $("div.sem_month_2").replaceWith("Nov");
+            $("div.sem_time_2").replaceWith("1pm");
 
-            $(".sem_image_2").attr('src',"assets/img/seminar/SKA.png");
-
-            // Talk 3
-            $("div.sem_title_3").replaceWith("Simulation-based inference: the Dark Energy Survey & Evidence Networks");
-            $("div.sem_author_3").replaceWith("Niall Jeffrey");
+            //Talk 3
+            $("div.sem_title_3").replaceWith("The SKA as an AI Problem");
+            $("div.sem_author_3").replaceWith("Jeremy Yates");
             $("div.sem_abstract_3").replaceWith("Coming Soon");
-            $("div.sem_where_3").replaceWith("hybrid/online");
+            $("div.sem_where_3").replaceWith("oline");
 
-            $("div.sem_day_3").replaceWith("26");
-            $("div.sem_month_3").replaceWith("Oct");
-            $("div.sem_time_3").replaceWith("1pm");
+            $("div.sem_day_3").replaceWith("30");
+            $("div.sem_month_3").replaceWith("Nov");
+            $("div.sem_time_3").replaceWith("1:30pm");
+
+
 
             // Talk 4
-            $("div.sem_title_4").replaceWith("TBC: Exploiting Gaia data and understanding the galaxies' past histories with machine learning");
-            $("div.sem_author_4").replaceWith("TBC: Tanya Kushwahaa");
+            $("div.sem_title_4").replaceWith("TBC");
+            $("div.sem_author_4").replaceWith("TBC");
             $("div.sem_abstract_4").replaceWith("Coming Soon");
-            $("div.sem_where_4").replaceWith("online");
+            $("div.sem_where_4").replaceWith("oline");
 
-            $("div.sem_day_4").replaceWith("30");
-            $("div.sem_month_4").replaceWith("Nov");
-            $("div.sem_time_4").replaceWith("1pm");
+            $("div.sem_day_4").replaceWith("25");
+            $("div.sem_month_4").replaceWith("Jan");
+            $("div.sem_time_4").replaceWith("1:00pm");
 
             // Talk 5
-            $("div.sem_title_5").replaceWith("TBC: The SKA as an AI Problem");
+            $("div.sem_title_5").replaceWith("TBC");
             $("div.sem_author_5").replaceWith("TBC: Jeremy Yates");
             $("div.sem_abstract_5").replaceWith("Coming Soon");
             $("div.sem_where_5").replaceWith("oline");
 
-            $("div.sem_day_5").replaceWith("30");
-            $("div.sem_month_5").replaceWith("Nov");
-            $("div.sem_time_5").replaceWith("1:30pm");
+            $("div.sem_day_5").replaceWith("29");
+            $("div.sem_month_5").replaceWith("Feb");
+            $("div.sem_time_5").replaceWith("1:00pm");
             
         </script>
         
